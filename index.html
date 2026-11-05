@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/splide.min.css">
+
+   <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>JSfinalProject</title>
+</head>
+<body>
+    <!--nav start-->
+    <nav  id="nav">
+        <div class="nav-left">
+            <div id="menu-btn">
+                <button>
+               <i class="fa-solid fa-grip-lines"></i>
+                </button>
+            </div>
+            <div class="logo">
+        <img src="./assets/images/Logo.jpg">
+            </div>
+            <ul>
+                <li class="active"><a href="./index.html" >Home</a></li>
+                <li><a href="./shop.html">our products</a></li>
+                <li><a href="./journal.html">journal</a></li>
+                <li><a href="./about-us.html">about us</a></li>
+                <li><a href="./contact.html">contacts</a></li>
+
+            </ul>
+
+        </div>
+        <div class="nav-right">
+            <div class="money" id="money">
+            <span>us (gbp)  £</span>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="drop-down">
+                    <div class="option">
+                        <div>uk £</div>
+                    </div>
+                    <div class="option">
+                        <div>eg £</div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="search" id="search">
+             <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="user" id="user">
+                 <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="cart" id="cart">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                      <span>0</span>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="side-bar-layout">
+        <div class="side-bar">
+            <div class="close-box" >
+                <i class="fa-solid fa-xmark"></i>
+
+            </div>
+        <div class="logo">
+                <img src="./assets/images/Logo.jpg">
+        </div>
+        <div class="search-input">
+                <input type="text" placeholder="search for products...">
+             <i class="fa-solid fa-magnifying-glass"></i>
+                
+        </div>
+        <ul>
+                 <li><a href="./index.html" >Home</a></li>
+                <li><a href="/shop.html">our products</a></li>
+                <li><a href="/journal.html">journal</a></li>
+                <li><a href="./about-us.html">about us</a></li>
+                <li><a href="./contact.html">contacts</a></li> 
+                <li>
+                 <i class="fa-regular fa-user"></i>
+                <a href="#">account</a></li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#">cart $0.00</a></li> 
+
+
+        </ul>
+        </div>
+    </div>
+    <div class="shop-cart-box">
+        <div class="shop-cart">
+        <div class="close-box" id="close-cart">
+              <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-info">
+            <img src="./assets/images/image (19).svg">
+            <span>cart</span>
+        </div>
+        <div id="cart-body">
+        <p>No products in the cart.</p>
+        <a href="./shop.html"> return to shop</a>
+       </div>
+        <div class="total-price">
+            <span>total cost:</span>
+            <span id="span">$196.00</span>
+        </div>
+    </div>
+    </div>
+    <!--user box start-->
+    <div class="user-box" id="user-box">
+        <div class="user-cart">
+        <div class="close-box" id="close-user-info">
+                <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-info">
+                 <i class="fa-regular fa-user"></i>
+            
+            <span>sign in</span>
+        </div>
+        <form target="_blank" action="./userInfo.html">
+            <label for="name">Username or email *</label>
+            <input type="text email" id="name" required>
+            <label for="password">Password  *</label>
+            <div class="pass">
+            <input type="password" required id="password"> 
+            <img src="./assets/images/image (9).svg">
+            </div>
+            <div>
+            <input type="radio" id="remem">
+            <label for="remem">
+ Remember me</label>
+ </div>
+ <button>login</button>
+        </form>
+        <a href="./userInfo.html">
+Lost your password?</a>
+    </div>
+    </div>
+    <!--user box end-->
+    <!--nav end-->
+    <div class="hero" id="hero">
+        <button class="prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+   <section id="hero-slider" class="splide"
+        aria-label="My Projects">
+
+        <div class="splide__track">
+    
+            <div class="splide__list">
+
+                <div class="splide__slide">
+                      <div class=" slider slide-1">
+            <div class="container">
+                <h2>
+                    tecnology.
+                    <span>entertainment</span>
+                    productivity.
+                </h2>
+                <p class="elementor-heading-title elementor-size-default">Exclusive VR Headset Offer Dive Into Immersive Virtual Reality</p>
+                <button>
+              <i class="fa-solid fa-bag-shopping"></i>
+               <span>Buy Now - £199</span></button>
+            </div>
+        </div>
+                    </div>
+
+                <div class="splide__slide">
+                  <div class=" slider slide-2">
+                 <div class="container">
+                 <h2>
+                    work smarter.
+                    <span>connect faster</span>
+                    achive more.
+                </h2>
+               <p class="elementor-heading-title elementor-size-default">Essential devices that keep you productive anywhere</p>
+                <button>
+              <i class="fa-solid fa-bag-shopping"></i>
+               <span>Buy Now - £199</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="search-box">
+    <div class="close-box" id="close-search">
+              <i class="fa-solid fa-xmark"></i>
+        </div>
+    <h2>What Are You Looking For?</h2>
+    <form>
+        <select>
+            <option value="categries">all categories</option>
+            <option value="Camera">Camera</option>
+            <option value="computer">computer</option>
+            <option value="controller">controller</option>
+            <option value="drone">drone</option>
+            <option value="earBode">earBode</option>
+            <option value="headphone">headphone</option>
+            <option value="microphone">microphone</option>
+            <option value="phones">phones</option>
+            <option value="printer">printer</option>
+            <option value="scanner">scanner</option>
+            <option value="smartWatch">smart watch</option>
+            <option value="wireless">wireless</option>
+        </select>
+        <input type="text" placeholder="search for product">
+        <button type="submit"><a href="./shop.html">
+             <i class="fa-solid fa-magnifying-glass"></i>
+           <span>search</span></a></button>
+    </form>
+    <p>Popular categories</p>
+    <div class="container">
+        <div class="box">
+                <a href="./shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon.svg" alt="icon">
+                </div>
+                
+                <b>Camera</b>
+                <p>12 products</p>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-4.svg" alt="icon">
+                </div>
+                <b>Computer</b>
+                <p>12 products</p>
+
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-2.svg" alt="icon">
+                </div>
+                <b>Controller</b>
+                <p>13 products</p>
+
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-8.svg" alt="icon">
+                </div>
+                <b>drone</b>
+                <p>14 products</p>
+
+                </a>
+            </div>
+             <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-6.svg" alt="icon">
+                </div>
+                <b>earpuds</b>
+                <p>15 products</p>
+
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-1.svg" alt="icon">
+                </div>
+                <b>headphone</b>
+                <p>15 products</p>
+
+                </a>
+            </div>
+    </div>
+    <button> <a href="./shop.html"> view all categories</a></button>
+</div>
+    </section>
+ <div class="hero-foot" >
+    <div class="container">
+        <div class="card">
+            <div class="card-info">
+            <p>Enjoy a greater level of smart watches for fitness</p>
+            <a href="#hero">shop now <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="card-image">
+                <img src="./assets/images/Image-1-min.jpg">
+
+            </div>
+        </div>
+          <div class="card">
+            <div class="card-info">
+            <p>Use automation to save more energy consumption</p>
+            <a href="#hero">shop now <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="card-image">
+                <img src="./assets/images/Image-2-min.jpg">
+
+            </div>
+        </div>
+          <div class="card">
+            <div class="card-info">
+            <p>Up to 50% off on accessories and smart wearables</p>
+            <a href="#hero">shop now <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="card-image">
+                <img src="./assets/images/Image-3-min.jpg">
+
+            </div>
+        </div>
+    </div>
+ </div>   
+    </div>
+    <!--trainding categories start-->
+    <div class=" tranding-cat">
+        <h2>
+            Trending 
+            <span>Categories</span>
+        </h2>
+        <div class="container">
+            <div class="box">
+                <a href="./shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon.svg" alt="icon">
+                </div>
+                
+                <b>Camera</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-4.svg" alt="icon">
+                </div>
+                <b>Computer</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-2.svg" alt="icon">
+                </div>
+                <b>Controller</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-8.svg" alt="icon">
+                </div>
+                <b>drone</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-6.svg" alt="icon">
+                </div>
+                <b>earpuds</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-1.svg" alt="icon">
+                </div>
+                <b>headphone</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-10.svg" alt="icon">
+                </div>
+                <b>microphone</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-3.svg" alt="icon">
+                </div>
+                <b>phones</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-7.svg" alt="icon">
+                </div>
+                <b>printer</b>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-11.svg" alt="icon">
+                </div>
+                <b>scanner</b>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--trainding categories end-->
+    <!--innovation start-->
+    <div class="innovation">
+        <div class="container">
+        <h2>
+            Innovation 
+            <span> Unparalleled</span>
+             Experience
+        </h2>
+        <a href="#hero">
+         see products
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+    </div>
+    <!--innovation end-->
+  <!--product start-->
+  <div class="product-pro">
+    <div>
+    <h3>
+        Discover 
+        <span>Top Picks</span>
+    </h3>
+    <p>Top-selling tech essentials, trusted by customers for quality and performance.</p>
+  </div>
+    <section id="pro-slider" class="splide"
+        aria-label="My Projects">
+           <button class="pro-prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+        <button class="pro-next"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="splide__track">
+
+            <div class="splide__list" id="cont-pro">
+</div>
+</div>
+
+</section>
+</div>
+  <!--product end-->
+  <section class="marquee">
+
+    <div class="splide" id="marquee">
+
+        <div class="splide__track">
+
+            <ul class="splide__list">
+
+                <li class="splide__slide">9550+ Products.</li>
+
+                <li class="splide__slide">Free Delivery.</li>
+
+                <li class="splide__slide">Easy Returns .</li>
+
+                <li class="splide__slide">Best Quality .</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+<div class="deals">
+    
+    <div class="info">
+        <span> <img src="./assets/images/image (3).svg"> Top Deals - Save up to 50% Off on Headphone</span>
+    <div class="countdown" id="count-down">
+        <div>
+            <span id="days">00 :</span>
+            
+            <small>Days</small>
+        </div>
+
+        <div>
+            <span id="hours">00 :</span>
+            <small>Hours</small>
+        </div>
+        
+        <div>
+            <span id="minutes">00 :</span>
+            <small>Minutes </small>
+        </div>
+         
+        <div>
+            <span id="seconds">00 </span>
+            <small>Seconds</small>
+        </div>
+        
+    </div>
+
+        <a href="#hero">discover sales   <i class="fa-solid fa-arrow-right"></i> </a>
+</div>
+<div class="brands">
+    <div class="box-image">
+    <img src="./assets/images/brand3.png">
+    </div>
+    <div class="box-image">
+
+    <img src="./assets/images/brand2.png">
+    </div>
+    <div class="box-image">
+    <img src="./assets/images/brand4.png">
+    </div>
+    <div class="box-image">
+    <img src="./assets/images/brand1.png">
+      </div>
+    <div class="box-image">
+    <img src="./assets/images/brand6.png">
+    </div>
+    <div class="box-image">
+    <img src="./assets/images/brand6.png">
+    </div>
+    <div class="box-image">
+    <img src="./assets/images/brand7.png">
+    </div>
+</div>
+</div>
+<div class="parent">
+<div class=" section section-1">
+<div class="compact">
+     <div class="splide" id="compact">
+          <div class="custom-pagination"></div>
+        <div class="splide__track">
+
+            <div class="splide__list">
+
+                <div class="splide__slide">
+                      <div class=" slider slide-1">
+      <div class="comp-info">
+       <img src="./assets/images/Icon-min.png">
+
+        <h3>
+            compact
+            <span>& reliable</span>
+        </h3>
+        <p>Experience stunning brightness and image clarity with 4000 lumens, making it perfect for daytime or nighttime viewing without compromising picture quality.</p>
+     <a href="#hero">see collection <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</div>
+</div>
+ <div class="splide__slide">
+                      <div class=" slider slide-2">
+      <div class="comp-info">
+       <img src="./assets/images/Icon-min.png">
+
+        <h3>
+            smart
+            <span>& connected</span>
+        </h3>
+      <p>  Control your home with just your voice — music, answers, reminders
+and more in one compact device.</p>
+     <a href="#hero">see collection <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=" section section-2">
+    <div class="quality">
+        <div>
+    <img src="./assets/images/Icon-min-2.png">
+
+        <h3>
+ Bring Quality Sound
+ <span>into Your Home</span>
+        </h3>
+        <p>XStore Elementor Minimal Tech Demo - WooCommerce Theme</p>
+     <a href="#hero">buy now with  <img src="./assets/images/image (11).svg"></i></a>
+    </div>
+</div>
+</div>
+</div>
+<div class="journal">
+    <div class="joun-info">
+<h2>
+    Interesting 
+    <span>Journal</span>
+    </h2>
+    <p>See what our satisfied customers have to say about our electronic accessories.</p>
+       </div> 
+    <div class="splide" id="journal">
+      <button class="journ-prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+        <button class="journ-next"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="splide__track">
+
+            <div class="splide__list">
+
+                <div class="splide__slide">
+                      <div class=" slider slide-1">
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-10-rb5pmbzvut6hajbs5n2pz7ekfnqpoi23cjosn9y7nc.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>bring the power of monitoring to camares</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                <div class="splide__slide">
+
+                         <div class=" slider slide-2">
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-6-rb5pm88j3h1c03h8rlg7p8cq2498tpn6012uq63sc8.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>virtual security guards:bringing the monitoring to camares</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                <div class="splide__slide">
+
+                         <div class=" slider slide-3">
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-8-rb5pma47h53wnbeigm9gu7vn8vzz93umoadtoq0zzs.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>what to you get the person whose havEveryThing printers</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                  <div class="splide__slide">
+
+                         <div class=" slider slide-4">
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-9-rb5pmb21nz56yxd5b4o3epn3u9vcgsyd0f1b5zzltk.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>halloween safety tips for whole families the final touches
+                               </p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                <div class="splide__slide">
+
+                         <div class=" slider slide-5">
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-3-rb5pm6cupsyrcvjz2kmyk8tsvciiebfpbrrvrm6koo.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>sound harmony :how accessories affectrecording qualities
+                                halloween safety tips for whole families the final touches</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                <div class="splide__slide">
+
+                         <div class=" slider slide-6">
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-4-rb5pm6cupsyrcvjz2kmyk8tsvciiebfpbrrvrm6koo.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p> Introducing: A Lofty New Look For SmartLighting and Drone</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+             </div>
+
+    </div>
+</div>
+<!--customer seevice start-->
+<div class="customer-serv">
+     <div class="splide" id="customer-serv">
+        <button class="cust-prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+        <button class="cust-next"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="splide__track">
+
+            <div class="splide__list">
+
+                <div class="splide__slide">
+                      <div class=" slider slide-1">
+         <div class="container">
+             <div class="customer-serv-left">
+               <div class="images">
+            <img src="./assets/images/Image-7.jpg">
+    <img src="./assets/images/Icon.png">
+  </div>
+      <div class="icons">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+  </div>
+  <p>
+  I've been using this product for a month
+now, and I've had no issues. The
+customer services is top-notch, and the
+product is exactly as described.</p>
+<b>ronald williamson</b>
+<span>producr designer, new mexico </span>
+</div>
+    <div class="customer-serv-right">
+        <img src="./assets/images/Post-image-9-rb5pmb21nz56yxd5b4o3epn3u9vcgsyd0f1b5zzltk.jpg">
+    </div>
+</div>
+</div>
+</div>
+    <div class="splide__slide">
+                      <div class=" slider slide-2">
+         <div class="container">
+             <div class="customer-serv-left">
+               <div class="images">
+            <img src="./assets/images/Image-2-min.jpg">
+    <img src="./assets/images/Icon.png">
+  </div>
+      <div class="icons">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+  </div>
+  <p>
+  I've been using this product for a month
+now, and I've had no issues. The
+customer services is top-notch, and the
+product is exactly as described.</p>
+<b>ronald williamson</b>
+<span>producr designer, new mexico </span>
+</div>
+    <div class="customer-serv-right">
+        <img src="./assets/images/Post-image-7.jpg">
+    </div>
+</div>
+</div>
+</div>
+                  
+     
+
+</div>
+</div>
+</div>
+<div class="customer-serv-foot">
+    <div class="cont">
+        <div class="box">
+            <b>Fast Free Shipping</b>
+            <div class="info">
+                <img src="./assets/images/image (13).svg">
+                <p>Get free shipping on order of 15% or more gifts.</p>
+            </div>
+        </div>
+        <div class="box">
+            <b>Customer service</b>
+            <div class="info">
+                <img src="./assets/images/image (14).svg">
+                <p>It’s not actually free we just price it into the products.</p>
+            </div>
+        </div>
+        <div class="box">
+            <b>Refer a friend</b>
+            <div class="info">
+                <img src="./assets/images/image (15).svg">
+                <p>Share with friends & get 10% off each other.</p>
+            </div>
+        </div>
+        <div class="box">
+            <b>Secure payment</b>
+            <div class="info">
+                <img src="./assets/images/image (16).svg">
+                <p>Our website uses new encryption technology.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+  <div class="alert" id="alert" >
+            <i class="fa-regular fa-circle-check"></i>
+            <span>product added</span>
+
+        </div>
+<!--cusyom seevice end-->
+<!--footer start-->
+<footer>
+    <div class="container">
+        <div>
+            <img src="./assets/images/XSTORE-footer-min.png">
+            <div class="info">
+                <p>Address: 1234 Fashion Street, Suite 567, New York, NY</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Email: info@example.com</p>
+            </div>
+        </div>
+        <div>
+           <a href="#hero" ><b>Collections</b></a>
+            <div class="info">
+           <p><a href="#hero">Headphones </a></p>
+           <p><a href="#hero">Speakers</a></p>
+           <p><a href="#hero">Accessories</a></p>
+           <p><a href="#hero">Home Cinema</a></p>
+           <p><a href="#hero">LED TVs</a></p>
+           <p><a href="#hero">Sound Bars </a></p>
+            </div>
+        </div>
+         <div>
+            <a href="#hero"><b>information</b></a>
+            <div class="info">
+           <p><a href="#hero">Wholesale </a></p>
+           <p><a href="#hero">Become a Retailer</a></p>
+           <p><a href="#hero">Corporate Orders</a></p>
+           <p><a href="#hero">Affiliates</a></p>
+          <p><a href="#hero">Gifts Cards</a></p>
+           <p><a href="#hero">Contact Us</a></p>
+            </div>
+        </div>
+        <div>
+            <b>Stay Up to Date with New Releases</b>
+            <p>Get notified about new updates, products, tips and tutorials. No spam. You can always unsubscribe.</p>
+          <form class="email">
+            
+        <input type="email" placeholder="Your email iD">
+            <button>subscribe</button>
+            </form>
+          </div>
+        </div>
+        
+    <div class="foot-center">
+    <div>
+        <div class="lang">
+            <a href="#hero">
+               <span>USD$</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="drop-down">
+                    <p>UK$</p>
+                    <p>EG$</p>
+                   <p>USD</p>
+                </div>
+            </a>
+             <a href="#hero">
+               <span> english </span><i class="fa-solid fa-chevron-down"></i>
+                 <div class="drop-down">
+                    <p>English</p>
+                    <p>Arabic</p>
+                   <p>french</p>
+                   </div>
+            </a>
+        </div>
+        <div class=" image">
+            <img src="./assets/images/payments-footer-img.png">
+        </div>
+        <div class="icons">
+            <a href="./index.html" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="./index.html" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="./index.html" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="./index.html" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="./index.html" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="copy-right">
+        <div class="copy-right-left">
+        <span>Copyright © 2026 </span>
+        <a href="https://xstore.8theme.com/"> XStore</a>
+        <a href="https://xstore.8theme.com/">theme. </a>
+        <span>Created by 8theme – </span>
+        <a href="https://www.8theme.com/woocommerce-themes/"> WordPress WooCommerce themes.</a>
+    </div>
+    <div class="copy-right-right">
+        <div>
+            <a href="#hero">terms &conditions</a>
+            <a href="#hero">refund policy</a>
+            <a href="#hero">privacy policy</a>
+            <a href="#hero">terms of use</a>
+
+        </div>
+</div>
+    </div>
+</footer>
+<!--footer end-->
+
+    <button class="scroll-progress" id="scrollProgress">
+        <svg viewBox="0 0 70 70">
+
+            <!-- Background Circle -->
+            <circle
+                class="bg"
+                cx="35"
+                cy="35"
+                r="32"
+            />
+
+            <!-- Progress Circle -->
+            <circle
+                class="progress"
+                cx="35"
+                cy="35"
+                r="32"
+            />
+
+        </svg>
+
+        <span>↑</span>
+
+    </button>
+ <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="./scripts/splide.min.js"></script>
+   <script src="./scripts/main.js" ></script>
+</body>
+</html>

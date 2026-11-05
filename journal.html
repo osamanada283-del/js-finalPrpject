@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/splide.min.css">
+
+   <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>JSfinalProject</title>
+</head>
+<body>
+    <!--nav start-->
+    <nav  id="nav">
+        <div class="nav-left">
+            <div id="menu-btn">
+                <button>
+               <i class="fa-solid fa-grip-lines"></i>
+                </button>
+            </div>
+            <div class="logo">
+        <img src="./assets/images/Logo.jpg">
+            </div>
+            <ul>
+                <li><a href="./index.html" >Home</a></li>
+                <li ><a href="./shop.html">our products</a></li>
+                <li class="active"><a href="./journal.html">journal</a></li>
+                <li><a href="./about-us.html">about us</a></li>
+                <li><a href="./contact.html">contacts</a></li>
+
+            </ul>
+
+        </div>
+        <div class="nav-right">
+            <div class="money" id="money">
+            <span>us (gbp)  £</span>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="drop-down">
+                    <div class="option">
+                        <div>uk £</div>
+                    </div>
+                    <div class="option">
+                        <div>eg £</div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="search" id="search">
+             <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="user" id="user">
+                 <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="cart" id="cart">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                      <span>0</span>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="side-bar-layout">
+        <div class="side-bar">
+            <div class="close-box" >
+                <i class="fa-solid fa-xmark"></i>
+
+            </div>
+        <div class="logo">
+                <img src="./assets/images/Logo.jpg">
+        </div>
+        <div class="search-input">
+                <input type="text" placeholder="search for products...">
+             <i class="fa-solid fa-magnifying-glass"></i>
+                
+        </div>
+        <ul>
+                 <li><a href="./index.html" >Home</a></li>
+                <li><a href="./shop.html">our products</a></li>
+                <li><a href="./journal.html">journal</a></li>
+                <li><a href="./about-us.html">about us</a></li>
+                <li><a href="./contact.html">contacts</a></li> 
+                <li>
+                 <i class="fa-regular fa-user"></i>
+                <a href="#">account</a></li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#">cart $0.00</a></li> 
+
+
+        </ul>
+        </div>
+        </div>
+        <!--cart box-->
+        <div class="shop-cart-box">
+        <div class="shop-cart">
+        <div class="close-box" id="close-cart">
+              <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-info" id="Info-cart">
+            <img src="./assets/images/image (19).svg">
+            <span>cart</span>
+        </div>
+        <div id="cart-body">
+        <p>No products in the cart.</p>
+        <a href="./shop.html"> return to shop</a>
+       </div>
+    </div>
+    </div>
+    </div>
+    <!--search start-->
+    <div class="search-box">
+    <div class="close-box" id="close-search">
+              <i class="fa-solid fa-xmark"></i>
+        </div>
+    <h2>What Are You Looking For?</h2>
+    <form>
+        <select>
+            <option value="categries">all categories</option>
+            <option value="Camera">Camera</option>
+            <option value="computer">computer</option>
+            <option value="controller">controller</option>
+            <option value="drone">drone</option>
+            <option value="earBode">earBode</option>
+            <option value="headphone">headphone</option>
+            <option value="microphone">microphone</option>
+            <option value="phones">phones</option>
+            <option value="printer">printer</option>
+            <option value="scanner">scanner</option>
+            <option value="smartWatch">smart watch</option>
+            <option value="wireless">wireless</option>
+        </select>
+        <input type="text" placeholder="search for product">
+        <button type="submit"><a href="./shop.html">
+             <i class="fa-solid fa-magnifying-glass"></i>
+           <span>search</span></a></button>
+    </form>
+    <p>Popular categories</p>
+    <div class="container">
+        <div class="box">
+                <a href="./shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon.svg" alt="icon">
+                </div>
+                
+                <b>Camera</b>
+                <p>12 products</p>
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-4.svg" alt="icon">
+                </div>
+                <b>Computer</b>
+                <p>12 products</p>
+
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-2.svg" alt="icon">
+                </div>
+                <b>Controller</b>
+                <p>13 products</p>
+
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-8.svg" alt="icon">
+                </div>
+                <b>drone</b>
+                <p>14 products</p>
+
+                </a>
+            </div>
+             <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-6.svg" alt="icon">
+                </div>
+                <b>earpuds</b>
+                <p>15 products</p>
+
+                </a>
+            </div>
+              <div class="box">
+                <a href="shop.html">
+                <div class="box-icon">
+                   <img src="./assets/images/Icon-1.svg" alt="icon">
+                </div>
+                <b>headphone</b>
+                <p>15 products</p>
+
+                </a>
+            </div>
+    </div>
+    <button> <a href="./shop.html"> view all categories</a></button>
+</div>
+    <!--search box end-->
+     <!--user box start-->
+    <div class="user-box" id="user-box">
+        <div class="user-cart">
+        <div class="close-box" id="close-user-info">
+                <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="cart-info">
+                 <i class="fa-regular fa-user"></i>
+            
+            <span>sign in</span>
+        </div>
+        <form target="_blank" action="./userInfo.html">
+            <label for="name">Username or email *</label>
+            <input type="text email" id="name" required>
+            <label for="password">Password  *</label>
+            <div class="pass">
+            <input type="password" required id="password"> 
+            <img src="./assets/images/image (9).svg">
+            </div>
+            <div>
+            <input type="radio" id="remem">
+            <label for="remem">
+ Remember me</label>
+ </div>
+ <button>login</button>
+        </form>
+        <a href="./userInfo.html">
+Lost your password?</a>
+    </div>
+    </div>
+    <!--user box end-->
+        <div class="prohome">
+            <h2>
+                our
+                <span>journal</span>
+            </h2>
+            <p>Sign up to our newsletter and be the first to get notified when new product.</p>
+        </div>
+       <div class="our-journal">
+            <div class="container">
+
+                  <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-10-rb5pmbzvut6hajbs5n2pz7ekfnqpoi23cjosn9y7nc.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>bring the power of monitoring to camares</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                       <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-6-rb5pm88j3h1c03h8rlg7p8cq2498tpn6012uq63sc8.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>virtual security guards:bringing the monitoring to camares</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>   
+                       <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-8-rb5pma47h53wnbeigm9gu7vn8vzz93umoadtoq0zzs.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>what to you get the person whose havEveryThing printers</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>   
+
+                     <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-9-rb5pmb21nz56yxd5b4o3epn3u9vcgsyd0f1b5zzltk.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>halloween safety tips for whole families the final touches
+                               </p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                  <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-3-rb5pm6cupsyrcvjz2kmyk8tsvciiebfpbrrvrm6koo.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p>sound harmony :how accessories affectrecording qualities</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>
+                  <div class="box">
+                            <div class="box-image">
+                                <img src="./assets/images/Post-image-4-rb5pm6cupsyrcvjz2kmyk8tsvciiebfpbrrvrm6koo.jpg">
+                                <span>
+                            electronics
+                                </span>
+                                <span>gadgets</span>
+                            </div>
+                            <p> Introducing: A Lofty New Look For SmartLighting and Drone</p>
+                        <div class="box-foot">
+                            <div class="box-foot-left">
+                                <img src="./assets/images/ava.jpg">
+                                <b>by rosetyler</b>
+                            </div>
+                            <div class="box-foot-right">
+                                <img src="./assets/images/image (12).svg">
+                                <span>january 22,2026</span>
+                            </div>
+                        </div>
+                        </div>             
+       </div>
+        </div>
+    <footer>
+    <div class="container">
+        <div>
+            <img src="./assets/images/XSTORE-footer-min.png">
+            <div class="info">
+                <p>Address: 1234 Fashion Street, Suite 567, New York, NY</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Email: info@example.com</p>
+            </div>
+        </div>
+        <div>
+           <a href="#hero" ><b>Collections</b></a>
+            <div class="info">
+           <p><a href="#hero">Headphones </a></p>
+           <p><a href="#hero">Speakers</a></p>
+           <p><a href="#hero">Accessories</a></p>
+           <p><a href="#hero">Home Cinema</a></p>
+           <p><a href="#hero">LED TVs</a></p>
+           <p><a href="#hero">Sound Bars </a></p>
+            </div>
+        </div>
+         <div>
+            <a href="#hero"><b>information</b></a>
+            <div class="info">
+           <p><a href="#hero">Wholesale </a></p>
+           <p><a href="#hero">Become a Retailer</a></p>
+           <p><a href="#hero">Corporate Orders</a></p>
+           <p><a href="#hero">Affiliates</a></p>
+          <p><a href="#hero">Gifts Cards</a></p>
+           <p><a href="#hero">Contact Us</a></p>
+            </div>
+        </div>
+        <div>
+            <b>Stay Up to Date with New Releases</b>
+            <p>Sign up to our newsletter and be the first to get notified when new product.</p>
+          <form class="email">
+            
+        <input type="email" placeholder="Your email iD">
+            <button>subscribe</button>
+            </form>
+          </div>
+        </div>
+        
+    <div class="foot-center">
+    <div>
+        <div class="lang">
+            <a href="#hero">
+               <span>USD$</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="drop-down">
+                    <p>UK$</p>
+                    <p>EG$</p>
+                   <p>USD</p>
+                </div>
+            </a>
+             <a href="#hero">
+               <span> english </span><i class="fa-solid fa-chevron-down"></i>
+                 <div class="drop-down">
+                    <p>English</p>
+                    <p>Arabic</p>
+                   <p>french</p>
+                   </div>
+            </a>
+        </div>
+        <div class=" image">
+            <img src="./assets/images/payments-footer-img.png">
+        </div>
+        <div class="icons">
+            <a href="./index.html" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="./index.html" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="./index.html" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="./index.html" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="./index.html" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="copy-right">
+        <div class="copy-right-left">
+        <span>Copyright © 2026 </span>
+        <a href="https://xstore.8theme.com/"> XStore</a>
+        <a href="https://xstore.8theme.com/">theme. </a>
+        <span>Created by 8theme – </span>
+        <a href="https://www.8theme.com/woocommerce-themes/"> WordPress WooCommerce themes.</a>
+    </div>
+    <div class="copy-right-right">
+        <div>
+            <a href="#hero">terms &conditions</a>
+            <a href="#hero">refund policy</a>
+            <a href="#hero">privacy policy</a>
+            <a href="#hero">terms of use</a>
+
+        </div>
+</div>
+    </div>
+</footer>
+<button class="scroll-progress" id="scrollProgress">
+        <svg viewBox="0 0 70 70">
+
+            <!-- Background Circle -->
+            <circle
+                class="bg"
+                cx="35"
+                cy="35"
+                r="32"
+            />
+
+            <!-- Progress Circle -->
+            <circle
+                class="progress"
+                cx="35"
+                cy="35"
+                r="32"
+            />
+
+        </svg>
+
+        <span>↑</span>
+
+    </button>
+     <script src="./scripts/splide.min.js"></script>
+   <script src="./scripts/shop.js" ></script>
+</body>
+</html>
